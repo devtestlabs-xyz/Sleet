@@ -4,6 +4,9 @@
 | --- | --- | --- |
 | [![AppVeyor](https://ci.appveyor.com/api/projects/status/cuhdeq60c3ogy7pa?svg=true)](https://ci.appveyor.com/project/emgarten/sleet) | [![Travis](https://travis-ci.org/emgarten/Sleet.svg?branch=master)](https://travis-ci.org/emgarten/Sleet) | [![VSO](https://hackamore.visualstudio.com/_apis/public/build/definitions/abbff132-0981-4267-a80d-a6e7682a75a9/2/badge)](https://github.com/emgarten/sleet) |
 
+# **CAUTION** #
+**This is a fork of the [official Sleet project](https://github.com/emgarten/Sleet)! The purpose of this fork and branch is to implement the Sleet MinIO S3 Server feed. To contribute or fork for whatever reason you should go to [official Sleet project](https://github.com/emgarten/Sleet).**
+
 # What is Sleet?
 
 Sleet is a static NuGet package feed generator.
@@ -59,3 +62,6 @@ Cold static packages from the cloud. ☁️ + 📦 = ❄️
 ## License
 
 [MIT License](https://github.com/emgarten/Sleet/blob/master/LICENSE.md)
+
+# **CAUTION** #
+**This is a fork of the [official Sleet project](https://github.com/emgarten/Sleet)! The purpose of this fork and branch is to implement the Sleet MinIO S3 Server feed. To contribute or fork for whatever reason you should go to [official Sleet project](https://github.com/emgarten/Sleet).**
