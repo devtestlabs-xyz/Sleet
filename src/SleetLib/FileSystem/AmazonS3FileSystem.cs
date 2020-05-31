@@ -49,7 +49,26 @@ namespace Sleet
 
             _compress = compress;
         }
+public AmazonS3FileSystem(
+            LocalCache cache,
+            Uri root,
+            Uri baseUri,
+            IAmazonS3 client,
+            string bucketName,
+            string feedSubPath = null,
+            bool compress = true)
+            : base(cache, root, baseUri)
+        {
+            _client = client;
+            _bucketName = bucketName;
 
+            if (!string.IsNullOrEmpty(feedSubPath))
+            {
+                FeedSubPath = feedSubPath.Trim('/') + '/';
+            }
+
+            _compress = compress;
+        }
         public override async Task<bool> Validate(ILogger log, CancellationToken token)
         {
             log.LogInformation($"Verifying {_bucketName} exists.");

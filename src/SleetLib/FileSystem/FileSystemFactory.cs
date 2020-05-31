@@ -245,7 +245,6 @@ namespace Sleet
                         var bucketName = JsonUtility.GetValueCaseInsensitive(sourceEntry, "bucketName");
                         var region = JsonUtility.GetValueCaseInsensitive(sourceEntry, "region");
                         var serviceURL = JsonUtility.GetValueCaseInsensitive(sourceEntry, "serviceURL");
-                        var serverSideEncryptionMethod = JsonUtility.GetValueCaseInsensitive(sourceEntry, "serverSideEncryptionMethod") ?? "None";
                         var compress = JsonUtility.GetBoolCaseInsensitive(sourceEntry, "compress", true);
                         
                         if (string.IsNullOrEmpty(bucketName))
@@ -306,7 +305,6 @@ namespace Sleet
                             baseUri,
                             amazonS3Client,
                             bucketName,
-                            serverSideEncryptionMethod,
                             feedSubPath,
                             compress);
                     }

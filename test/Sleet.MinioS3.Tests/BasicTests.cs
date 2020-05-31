@@ -183,7 +183,7 @@ namespace Sleet.MinioS3.Tests
                 var baseUri = new Uri("http://tempuri.org/abc/");
                 var fileSystem = new AmazonS3FileSystem(
                         testContext.LocalCache, testContext.Uri, baseUri,
-                        testContext.Client, testContext.BucketName, ServerSideEncryptionMethod.None
+                        testContext.Client, testContext.BucketName
                     );
                 
                 testContext.FileSystem = fileSystem;

@@ -27,13 +27,13 @@ namespace Sleet.MinioS3.Tests
                 testContext.FileSystem = new AmazonS3FileSystem(
                     testContext.LocalCache, root, root,
                     testContext.Client, testContext.BucketName,
-                    ServerSideEncryptionMethod.None, feedSubPath: subFeedName
+                    feedSubPath: subFeedName
                     );
 
                 testContext2.FileSystem = new AmazonS3FileSystem(
                     testContext.LocalCache, root2, root2,
                     testContext.Client, testContext.BucketName,
-                    ServerSideEncryptionMethod.None, feedSubPath: subFeedName2
+                    feedSubPath: subFeedName2
                     );
 
                 await testContext.InitAsync();
@@ -86,7 +86,7 @@ namespace Sleet.MinioS3.Tests
                 testContext.FileSystem = new AmazonS3FileSystem(
                     testContext.LocalCache, root, root,
                     testContext.Client, testContext.BucketName,
-                    ServerSideEncryptionMethod.None, feedSubPath: subFeedName
+                    feedSubPath: subFeedName
                     );
 
                 await testContext.InitAsync();
@@ -136,7 +136,7 @@ namespace Sleet.MinioS3.Tests
                 testContext.FileSystem = new AmazonS3FileSystem(
                     testContext.LocalCache, root, root,
                     testContext.Client, testContext.BucketName,
-                    ServerSideEncryptionMethod.None, feedSubPath: subFeedName
+                    feedSubPath: subFeedName
                     );
 
                 await testContext.InitAsync();

@@ -20,7 +20,7 @@ namespace Sleet.MinioS3.Tests
         public const bool Compress = false;
         public const string EnvFeedType = "SLEET_FEED_TYPE";
 
-        private bool cleanupDone = true;
+        private bool cleanupDone = false;
 
         public MinioS3TestContext()
         {
@@ -49,7 +49,6 @@ namespace Sleet.MinioS3.Tests
                                                 Uri,
                                                 Client,
                                                 BucketName,
-                                                ServerSideEncryptionMethod.None,
                                                 null,
                                                 Compress);
 
